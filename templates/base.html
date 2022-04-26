@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="static/css/design.css">
+<meta charset="UTF-8">
+{% block head %} {% endblock %}
+</head>
+
+<body>
+<div id="content">{% block body %}{% endblock %}</div>
+</body>
+
+<nav>
+<div id="navigation">
+{% filter markdown %}
+### Navigation
+[Home](/)
+[Fitness](/fitness)
+[Programming](/programming)
+[Rentals](/rentals)
+{% endfilter %}
+</div>
+</nav>
+
+</html>
